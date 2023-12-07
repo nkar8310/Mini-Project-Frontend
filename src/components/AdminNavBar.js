@@ -24,17 +24,17 @@ function Navbar() {
         {/* Navigation Links */}
         <ul className="navbar-nav me-auto" style={{ display: 'flex', alignItems: 'center' }}>
           <li className="nav-item">
-            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link" to="/mini-project/admin-home">
+            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link1" to="/mini-project/admin-home">
               AdminHome
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link" to="/mini-project/admin-product">
+            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link2" to="/mini-project/admin-product">
               Products
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link" to="/mini-project/admin-order">
+            <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link3" to="/mini-project/admin-order">
               Orders
             </Link>
           </li>

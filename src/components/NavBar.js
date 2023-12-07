@@ -14,6 +14,7 @@ function Navbar() {
   };
 
   return (
+    
     <nav style={{ background: '#0000A0', padding: '10px 0' }} className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         {/* FoodieVistaVeggies logo or name */}
@@ -24,17 +25,17 @@ function Navbar() {
         {/* Navigation Links */}
         <ul className="navbar-nav me-auto" style={{ display: 'flex', alignItems: 'center' }}>
           <li className="nav-item">
-            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link" to="/mini-project/home">
+            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link11" to="/mini-project/home">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link" to="/mini-project/product">
+            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link22" to="/mini-project/product">
               Products
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link" to="/mini-project/order">
+            <Link style={{ color: '#FFFFFF', margin: '0 20px' }} className="nav-link33" to="/mini-project/order">
               Your Orders
             </Link>
           </li>

@@ -116,7 +116,7 @@ function Product() {
           <h1>MANY PRODUCTS YOU CAN BUY HERE</h1>
 
           {vegetableData.map((vegetable) => (
-            <div key={vegetable.id} style={cardStyle}>
+            <div key={vegetable.id} style={cardStyle} className='test-card' data-product-id={`${vegetable.id}`}>
               <Link to={`/mini-project/product/${vegetable.id}`}>
                 <div className="card">
                   <div className="card-image">
