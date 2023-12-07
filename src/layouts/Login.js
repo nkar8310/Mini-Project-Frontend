@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Remove the import of useHistory
 import backgroundImage from '../assets/bg.jpg';
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
+
   const containerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -33,6 +33,7 @@ function Login() {
     fontSize: '16px',
     marginTop: '10px',
   };
+
   const handleLogin = async () => {
     try {
       // Call the login API endpoint
@@ -55,12 +56,9 @@ function Login() {
         // Log user details to the console
         console.log('Username:', username);
         console.log('Password:', password);
-        // history.push('/mini-project/product');
-        // window.location.href = '/mini-project/home';
 
         localStorage.setItem('userDetails', JSON.stringify({ username }));
         localStorage.setItem('userId', JSON.stringify({ username }));
-
 
         // Navigate based on user's role
         if (username === 'nomashikarunadasa@gmail.com') {
@@ -75,6 +73,7 @@ function Login() {
       console.error('Error during login:', error);
     }
   };
+
   return (
     <div style={containerStyle}>
       <div style={formStyle}>

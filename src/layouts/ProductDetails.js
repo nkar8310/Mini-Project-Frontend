@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   const [orderPlaced, setOrderPlaced] = useState(false);
   const [userId, setUserId] = useState(''); // Replace with the actual userId
-
+console.log(id);
   const bffBaseUrl = 'http://localhost:3001';
   const bffGetProductByIdEndpoint = (productId) => `${bffBaseUrl}/api/product/${productId}`;
   const backendOrderEndpoint = `${bffBaseUrl}/api/order`;

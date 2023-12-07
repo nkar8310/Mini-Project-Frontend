@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     // Delete user details from storage
@@ -10,7 +10,7 @@ function Navbar() {
     sessionStorage.removeItem('userDetails');
 
     // Navigate to the login page
-    history.push('/mini-project/login');
+    navigate('/mini-project/login');
   };
 
   return (
@@ -23,12 +23,11 @@ function Navbar() {
 
         {/* Navigation Links */}
         <ul className="navbar-nav me-auto" style={{ display: 'flex', alignItems: 'center' }}>
-        <li className="nav-item">
+          <li className="nav-item">
             <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link" to="/mini-project/admin-home">
               AdminHome
             </Link>
           </li>
-         
           <li className="nav-item">
             <Link style={{ color: '#0000A0', margin: '0 20px' }} className="nav-link" to="/mini-project/admin-product">
               Products

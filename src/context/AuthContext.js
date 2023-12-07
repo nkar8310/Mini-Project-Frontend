@@ -4,8 +4,9 @@ import React, { createContext, useContext, useReducer } from 'react';
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
+  const storedUserDetails = localStorage.getItem('userDetails');
   const initialState = {
-    isAuthenticated: !!localStorage.getItem('userDetails'),
+    isAuthenticated: !!storedUserDetails, // Ensure a boolean value
   };
 
   const authReducer = (state, action) => {
